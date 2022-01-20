@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Pass</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <form name="myForm">
+        <label for="turbo">Turbo C</label>
+        <input type="number" name="turbo" id="turbo" placeholder="Enter Turbo C Mark" required>
+        <br><br>
+        <label for="java">Java</label>
+        <input type="number" name="java" id="java" placeholder="Enter Java Mark" required>
+        <br><br>
+        <label for="javaScript">JavaScript</label>
+        <input type="number" name="javaScript" id="javaScript" placeholder="Enter JavaScript Mark" required>
+        <br><br>
+        <button type="button" onclick="result()">Result</button>
+
+    </form>
+
+    <script>
+        function result(){
+        // alert("Hello")
+        let turbo = document.myForm.turbo.value;
+        console.log(turbo);
+        let java = document.myForm.java.value;
+        console.log(java);
+        let javaScript = document.myForm.javaScript.value;
+        console.log(javaScript);
+
+        if (turbo >= 50 && turbo <= 80 && java >= 50 && java <= 80 && javaScript >= 50 && javaScript <= 80){
+            document.write('<h1>This Student is Pass</h1>');
+        } else if (turbo >= 81 && java >= 81 && javaScript >= 81) {
+            document.write('<h1>This Student is Pass with Distinctions</h1>');
+        } else if (turbo >= 81 && java <= 49 && javaScript <= 49){
+            document.write('<h1>This Student is Fail</h1>');
+        } else if (turbo <= 49 && java >= 81 && javaScript <= 49) {
+            document.write('<h1>This Student is Fail</h1>');
+        } else if (turbo <= 49 && java <= 49 && javaScript >= 81){
+            document.write('<h1>This Student is Fail</h1>');
+        } else if (turbo >= 50 && java >= 81 && javaScript >= 81) {
+            document.write('<h1>This Student is Pass</h1>');
+        } else if (turbo >= 81 && java >= 50 && javaScript >= 81) {
+            document.write('<h1>This Student is Pass</h1>');
+        } else if (turbo >= 81 && java >= 81 && javaScript >= 50) {
+            document.write('<h1>This Student is Pass</h1>');
+        } else if (turbo >= 50 && java >= 50 && javaScript >= 81) {
+            document.write('<h1>This Student is Pass</h1>');
+        } else if (turbo >= 81 && java >= 50 && javaScript >= 50) {
+            document.write('<h1>This Student is Pass</h1>');
+        } else if (turbo >= 50 && java >= 81 && javaScript >= 50) {
+            document.write('<h1>This Student is Pass</h1>');
+        } else {
+            document.write('<h1>This Student is Fail</h1>');
+        }
+
+
+
+        }
+    </script>
+</body>
+</html>               
