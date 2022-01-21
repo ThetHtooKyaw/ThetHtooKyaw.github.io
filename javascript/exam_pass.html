@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam Pass</title>
+    <title>Exam Result</title>
 </head>
 <body>
-    <h1>Exam Result</h1>
+    <a href="../mya.html">Go to Assignment Page</a>
+    <center><h1>This is Assignment 4</h1></center>
+    <center><h1>Exam Result</h1>
     <form name="myForm">
-        <label for="turbo">Turbo C</label>
-        <input type="number" name="turbo" id="turbo" placeholder="Enter Turbo C Mark" required>
-        <br><br>
-        <label for="java">Java</label>
-        <input type="number" name="java" id="java" placeholder="Enter Java Mark" required>
-        <br><br>
-        <label for="javaScript">JavaScript</label>
-        <input type="number" name="javaScript" id="javaScript" placeholder="Enter JavaScript Mark" required>
+       <table>
+            <tr>
+                <td>
+                    Turbo C :
+                </td>
+                <td>
+                    <input type="number" name="stu_number" id="turbo" placeholder="Enter Turbo C Mark" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Java :
+                </td>
+                <td>
+                    <input type="number" name="stu_number" id="java" placeholder="Enter Java Mark" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    JavaScript :
+                </td>
+                <td>
+                    <input type="number" name="stu_number" id="javaScript" placeholder="Enter JavaScript Mark" required>
+                </td>
+            </tr>
+        </table>
         <br><br>
         <button type="button" onclick="result()">Result</button>
-
-    </form>
+    </form></center>
 
     <script>
         function result(){
@@ -57,10 +76,13 @@
         } else {
             document.write('<h1>This Student is Fail</h1>');
         }
-
-
-
         }
     </script>
+    <hr>
+    <footer>
+        <center>
+            <h4>ThetHtooKyaw.github.io @ All right reserved.<br>By THK</h4>
+        </center>
+    </footer>
 </body>
 </html>               
